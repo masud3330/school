@@ -1,0 +1,240 @@
+*{
+    max-width: 1280px;
+    margin: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+}
+.nav-item ul li a{
+    text-decoration: none;
+    color: chocolate;
+}
+.contact-btn{
+    background-color: rgb(240, 103, 34);
+  
+}
+.contact-btn:hover{
+    background-color: chocolate;
+}
+
+/* same-btn */
+.same-btn{
+    padding: 10px;
+   
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+}
+.enroll-btn{
+    background-color: black;
+}
+
+/* banner */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+
+.empowering{
+    color: orange;
+}
+.age-towards-vision{
+    color: skyblue;
+}
+
+
+.banner-heading{
+    width: 640px;
+  
+}
+.banner-heading p{
+    margin: 10px 0px;
+}
+
+/* Standard Curriculum */
+.Standard-cards-container{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.Standard-Curriculum-container h1{
+    text-align: center;
+    margin: 15px 0px 20px 0px;
+}
+.Standard-card-container{
+    width: 365px;
+    height: 400px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px gray;
+   
+}
+.card1{
+    background: linear-gradient(#DEF5FF, #FFFFFF);
+}
+.card2{
+    background: linear-gradient(#FFF4DC, #FFFFFF);
+}
+.card3{
+    background: linear-gradient(#F2E8FF, #FFFFFF);
+}
+.Standard-card-container a{
+    text-decoration: none;
+    color: orange;
+}
+.arrow{
+display: flex;
+gap: 10px;
+justify-content: center;
+}
+.arrow h1{
+    background-color: orange;
+    
+    padding: 10px;
+    border-radius: 100%;
+}
+.arrow h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* our story */
+.Our-Stories-cards-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-image: url(./assets/bg.png), linear-gradient(#FFFFFF, #FEA301);
+    
+
+}
+.date{
+  
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: -20px;
+    left: -50px;
+    text-align: center;
+    color: white;
+}
+.blue-date-bg{
+    background-color: #3CD8E8;
+}
+.green-date-bg{
+    background-color: #95B226;
+}
+.navyBlue-data-bg{
+    background-color: #5D58F0;
+    
+}
+.story-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+.story-1st-card{
+    
+}
+.second-4-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+/* footer */
+.footer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #01ACFD;
+    color: white;
+
+}
+.footer-1st-section{
+    width: 300px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: space-around;
+  
+  
+}
+.footer-link li{
+list-style: none;
+}
+.footer-link li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    line-height: 10px;
+}
+.footer-keep-logo{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+/* responsive */
+@media (max-width: 650px) {
+
+    .banner-container{
+        flex-direction:column;
+    }
+    .banner-heading{
+        width: 500px;
+    }
+    .banner-container img{
+        width: 400px;
+    }
+
+    .Standard-cards-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Our-Stories-cards-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+     }
+     .story-1st-card{
+        width: 550px;
+        background-color: red;
+     }
+     .story-1st-card img{
+        width: 500px;
+     }
+     .second-4-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 650px) and (max-width:1080px) {
+
+    .Standard-cards-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
